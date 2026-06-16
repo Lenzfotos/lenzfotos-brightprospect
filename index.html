@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lenz Fotos × Bright Prospect — Summer Academy Proposal</title>
+<meta name="description" content="A photography & video documentation proposal from Lenz Fotos for Bright Prospect's Summer Academy, July 2025." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --black: #0a0a09;
+    --white: #ffffff;
+    --cream: #f7f4ef;
+    --gold: #8b6914;
+    --line: rgba(10, 10, 9, 0.12);
+    --line-faint: rgba(10, 10, 9, 0.07);
+    --muted: rgba(10, 10, 9, 0.55);
+    --display: "Cormorant Garamond", Georgia, serif;
+    --body: "Jost", "Helvetica Neue", Arial, sans-serif;
+    --nav-h: 64px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; scroll-padding-top: var(--nav-h); }
+
+  body {
+    font-family: var(--body);
+    font-weight: 300;
+    color: var(--black);
+    background: var(--white);
+    line-height: 1.65;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4 { font-family: var(--display); font-weight: 500; line-height: 1.12; letter-spacing: 0.005em; }
+
+  a { color: inherit; text-decoration: none; }
+
+  .eyebrow {
+    font-family: var(--body);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 32px; }
+
+  /* ---------- NAV ---------- */
+  nav.topnav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: var(--nav-h);
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: saturate(180%) blur(12px);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  .topnav .wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    font-family: var(--display);
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  .logo span { color: var(--gold); }
+  .navlinks { display: flex; gap: 30px; list-style: none; align-items: center; }
+  .navlinks a {
+    font-size: 12px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--muted);
+    padding: 4px 0;
+    border-bottom: 1px solid transparent;
+    transition: color 0.25s, border-color 0.25s;
+  }
+  .navlinks a:hover { color: var(--black); }
+  .navlinks a.active { color: var(--black); border-bottom-color: var(--gold); }
+
+  .navtoggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--body);
+    font-size: 12px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--black);
+  }
+
+  /* ---------- SECTION SHELL ---------- */
+  section { padding: 96px 0; border-bottom: 1px solid var(--line-faint); }
+  section.alt { background: var(--cream); }
+  .sec-head { max-width: 760px; margin-bottom: 56px; }
+  .sec-head h2 { font-size: clamp(34px, 5vw, 54px); margin: 14px 0 18px; }
+  .sec-head p { color: var(--muted); font-size: 17px; max-width: 640px; }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    background: var(--black);
+    color: var(--white);
+    padding: clamp(90px, 14vh, 150px) 0 clamp(70px, 11vh, 120px);
+    border-bottom: none;
+  }
+  .hero .eyebrow { color: var(--gold); }
+  .hero-statement {
+    font-family: var(--display);
+    font-weight: 400;
+    font-style: italic;
+    font-size: clamp(28px, 4.4vw, 50px);
+    line-height: 1.22;
+    max-width: 18ch;
+    margin: 26px 0 0;
+  }
+  .hero-statement em { font-style: normal; color: var(--gold); }
+  .hero-sub {
+    margin-top: 40px;
+    max-width: 60ch;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 17px;
+    font-weight: 300;
+  }
+  .hero-meta {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    padding-top: 28px;
+  }
+  .hero-meta div { font-size: 13px; }
+  .hero-meta .k { color: var(--gold); letter-spacing: 0.16em; text-transform: uppercase; font-size: 10px; font-weight: 500; display: block; margin-bottom: 5px; }
+  .hero-meta .v { color: var(--white); font-weight: 400; }
+
+  /* ---------- EVENT DETAILS ---------- */
+  .detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    border: 1px solid var(--line);
+  }
+  .detail-grid > div {
+    padding: 22px 26px;
+    border-bottom: 1px solid var(--line-faint);
+    border-right: 1px solid var(--line-faint);
+  }
+  .detail-grid > div:nth-child(2n) { border-right: none; }
+  .detail-grid .k { display: block; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin-bottom: 6px; }
+  .detail-grid .v { font-size: 16px; font-weight: 400; }
+
+  /* ---------- AUDIENCE CARDS ---------- */
+  .audience-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    margin-top: 64px;
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+  }
+  .audience-card {
+    padding: 32px 26px 38px;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    transition: background 0.3s;
+  }
+  .audience-card:hover { background: var(--cream); }
+  .audience-card .num { font-family: var(--display); font-size: 30px; color: var(--gold); font-weight: 500; line-height: 1; }
+  .audience-card h4 { font-size: 23px; margin: 16px 0 10px; }
+  .audience-card p { font-size: 14px; color: var(--muted); font-style: italic; }
+
+  /* ---------- PACKAGES ---------- */
+  .pkg-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    align-items: stretch;
+    border: 1px solid var(--line);
+  }
+  .pkg {
+    padding: 40px 32px 36px;
+    border-right: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    position: relative;
+  }
+  .pkg:last-child { border-right: none; }
+  .pkg.featured {
+    background: var(--black);
+    color: var(--white);
+    margin: -1px 0;
+    box-shadow: 0 0 0 2px var(--gold);
+    z-index: 2;
+  }
+  .pkg .ribbon {
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--gold);
+    color: var(--white);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 6px 16px;
+    white-space: nowrap;
+  }
+  .pkg-name { font-size: 30px; margin-bottom: 4px; }
+  .pkg-frame { font-style: italic; font-size: 13.5px; color: var(--muted); margin-bottom: 24px; }
+  .pkg.featured .pkg-frame { color: rgba(255,255,255,0.6); }
+  .pkg-price { font-family: var(--display); font-size: 46px; font-weight: 500; line-height: 1; }
+  .pkg-price small { font-family: var(--body); font-size: 13px; font-weight: 300; color: var(--muted); letter-spacing: 0.04em; }
+  .pkg.featured .pkg-price small { color: rgba(255,255,255,0.6); }
+  .pkg-includes { list-style: none; margin: 26px 0; flex-grow: 1; }
+  .pkg-includes li {
+    font-size: 14px;
+    padding: 9px 0 9px 22px;
+    position: relative;
+    border-top: 1px solid var(--line-faint);
+    color: rgba(10,10,9,0.78);
+  }
+  .pkg.featured .pkg-includes li { border-top-color: rgba(255,255,255,0.12); color: rgba(255,255,255,0.82); }
+  .pkg-includes li:before {
+    content: "—";
+    position: absolute; left: 0; top: 9px;
+    color: var(--gold);
+  }
+  .pkg-includes li.excl { color: var(--muted); }
+  .pkg-includes li.excl:before { content: "×"; }
+  .pkg-discount {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--gold);
+    border-top: 1px solid var(--line);
+    padding-top: 18px;
+    font-weight: 400;
+  }
+  .pkg.featured .pkg-discount { border-top-color: rgba(255,255,255,0.16); }
+
+  /* ---------- ADD-ON + UPGRADE ---------- */
+  .twocol { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; margin-top: 72px; }
+  .panel { border: 1px solid var(--line); padding: 36px 34px; }
+  .panel h3 { font-size: 26px; margin-bottom: 8px; }
+  .panel .tbd { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); font-weight: 500; }
+  .addon-price { font-family: var(--display); font-size: 30px; margin: 18px 0 12px; }
+  .addon-price span { font-size: 15px; font-family: var(--body); color: var(--muted); font-weight: 300; }
+  .panel p { font-size: 14.5px; color: var(--muted); margin-top: 14px; }
+  .panel p.why { color: var(--black); font-style: italic; border-left: 2px solid var(--gold); padding-left: 16px; margin-top: 20px; }
+
+  .upgrade-flow { display: flex; flex-direction: column; gap: 0; margin-top: 8px; }
+  .upgrade-step {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 0;
+    border-top: 1px solid var(--line-faint);
+  }
+  .upgrade-step:first-of-type { border-top: none; }
+  .upgrade-step .label { font-size: 15px; font-weight: 400; }
+  .upgrade-step .note { font-size: 12.5px; color: var(--muted); font-style: italic; display: block; margin-top: 2px; }
+  .upgrade-step .amt { font-family: var(--display); font-size: 22px; color: var(--gold); white-space: nowrap; }
+  .upgrade-foot { font-size: 13px; color: var(--muted); margin-top: 22px; border-top: 1px solid var(--line); padding-top: 18px; }
+
+  /* ---------- TIMELINE / DELIVERABLES ---------- */
+  .pay-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--gold); margin-bottom: 64px; }
+  .pay-grid > div { padding: 30px 32px; border-right: 1px solid rgba(139,105,20,0.3); }
+  .pay-grid > div:last-child { border-right: none; }
+  .pay-grid .pct { font-family: var(--display); font-size: 40px; color: var(--gold); line-height: 1; }
+  .pay-grid h4 { font-size: 21px; margin: 12px 0 8px; }
+  .pay-grid p { font-size: 14px; color: var(--muted); }
+
+  .deliv-block { margin-bottom: 52px; }
+  .deliv-block h3 { font-size: 26px; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  table.deliv { width: 100%; border-collapse: collapse; font-size: 14px; }
+  table.deliv th {
+    text-align: left;
+    font-family: var(--body);
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold);
+    padding: 0 18px 12px 0;
+    border-bottom: 1px solid var(--line);
+    vertical-align: bottom;
+  }
+  table.deliv td {
+    padding: 16px 18px 16px 0;
+    border-bottom: 1px solid var(--line-faint);
+    vertical-align: top;
+    color: rgba(10,10,9,0.8);
+  }
+  table.deliv td:first-child { font-weight: 400; color: var(--black); width: 26%; }
+  table.deliv td:last-child { white-space: nowrap; color: var(--gold); }
+
+  .reel-schedule { display: flex; gap: 0; border: 1px solid var(--line); margin: 8px 0 28px; }
+  .reel-schedule > div { flex: 1; padding: 22px 24px; border-right: 1px solid var(--line-faint); }
+  .reel-schedule > div:last-child { border-right: none; }
+  .reel-schedule .date { font-family: var(--display); font-size: 22px; color: var(--gold); }
+  .reel-schedule .what { font-size: 14px; margin-top: 6px; }
+
+  .strat-note, .notincl {
+    border-left: 2px solid var(--gold);
+    padding: 4px 0 4px 22px;
+    margin-top: 8px;
+    font-size: 15px;
+  }
+  .strat-note span { font-style: italic; color: var(--muted); }
+  .notincl { border-left-color: var(--line); margin-top: 36px; }
+  .notincl ul { list-style: none; margin-top: 10px; }
+  .notincl li { font-size: 14px; color: var(--muted); padding: 5px 0; }
+  .notincl li strong { color: var(--black); font-weight: 400; }
+
+  /* ---------- SHOT LIST ---------- */
+  .filters { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
+  .filter-btn {
+    font-family: var(--body);
+    font-size: 11px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--muted);
+    background: none;
+    border: 1px solid var(--line);
+    padding: 9px 18px;
+    cursor: pointer;
+    transition: all 0.22s;
+  }
+  .filter-btn:hover { color: var(--black); border-color: var(--black); }
+  .filter-btn.active { background: var(--black); color: var(--white); border-color: var(--black); }
+
+  .shot-group { margin-bottom: 52px; }
+  .shot-group > h3 { font-size: 24px; margin-bottom: 6px; }
+  .shot-group > .grp-sub { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 22px; font-weight: 500; }
+  .shot-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+  .shot-card {
+    padding: 26px 26px 28px;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    transition: background 0.25s;
+  }
+  .shot-card:hover { background: var(--cream); }
+  .shot-card.hidden { display: none; }
+  .shot-medium {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  .shot-medium svg { width: 15px; height: 15px; stroke: var(--gold); fill: none; stroke-width: 1.5; }
+  .shot-card h4 { font-size: 20px; line-height: 1.18; margin-bottom: 10px; }
+  .shot-card .tip { font-size: 13.5px; color: var(--muted); line-height: 1.55; }
+  .shot-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 16px; }
+  .tag {
+    font-size: 9.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 4px 9px;
+    border: 1px solid var(--line);
+    color: var(--muted);
+  }
+  .tag.donor { border-color: rgba(139,105,20,0.4); color: var(--gold); }
+  .tag.social { border-color: var(--line); }
+
+  .empty-state { display: none; text-align: center; padding: 60px 0; color: var(--muted); font-style: italic; font-family: var(--display); font-size: 22px; }
+
+  /* ---------- REELS MENU ---------- */
+  .reel-pricing { display: flex; gap: 28px; flex-wrap: wrap; margin-bottom: 44px; }
+  .reel-pricing div { font-size: 14px; }
+  .reel-pricing .p { font-family: var(--display); font-size: 30px; color: var(--gold); display: block; line-height: 1; margin-bottom: 4px; }
+  .reels-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+  .reel-card { padding: 26px 22px 28px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: background 0.25s; }
+  .reel-card:hover { background: var(--white); }
+  .reel-card h4 { font-size: 20px; margin-bottom: 8px; }
+  .reel-card .fmt { font-size: 12.5px; color: var(--black); font-weight: 400; margin-bottom: 8px; }
+  .reel-card .for { font-size: 13px; color: var(--muted); font-style: italic; }
+  .reel-card .aud { margin-top: 14px; }
+
+  .pkg-reels { margin-top: 56px; border: 1px solid var(--line); }
+  .pkg-reels > div { display: grid; grid-template-columns: 200px 1fr; gap: 0; border-bottom: 1px solid var(--line-faint); }
+  .pkg-reels > div:last-child { border-bottom: none; }
+  .pkg-reels .pr-name { padding: 22px 24px; font-family: var(--display); font-size: 21px; border-right: 1px solid var(--line-faint); background: var(--white); }
+  .pkg-reels .pr-name small { display: block; font-family: var(--body); font-size: 11px; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 4px; }
+  .pkg-reels .pr-list { padding: 22px 24px; font-size: 14px; color: var(--muted); }
+
+  /* ---------- INTERVIEW QUESTIONS ---------- */
+  .accordion { border-top: 1px solid var(--line); margin-top: 8px; }
+  .acc-item { border-bottom: 1px solid var(--line); }
+  .acc-trigger {
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 4px;
+    font-family: var(--display);
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--black);
+    text-align: left;
+  }
+  .acc-trigger .plus { font-family: var(--body); font-size: 24px; color: var(--gold); font-weight: 300; transition: transform 0.3s; line-height: 1; }
+  .acc-item.open .acc-trigger .plus { transform: rotate(45deg); }
+  .acc-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+  .acc-item.open .acc-body { max-height: 700px; }
+  .acc-body ul { list-style: none; padding: 4px 4px 28px; }
+  .acc-body li {
+    font-family: var(--display);
+    font-size: 19px;
+    font-style: italic;
+    color: rgba(10,10,9,0.78);
+    padding: 9px 0 9px 22px;
+    position: relative;
+    line-height: 1.4;
+  }
+  .acc-body li:before { content: "“"; position: absolute; left: 0; color: var(--gold); font-size: 24px; top: 6px; }
+
+  /* ---------- PROCESS TIMELINE ---------- */
+  .timeline { position: relative; padding-left: 40px; margin-top: 8px; }
+  .timeline:before {
+    content: "";
+    position: absolute;
+    left: 8px; top: 8px; bottom: 8px;
+    width: 1px;
+    background: var(--line);
+  }
+  .tl-item { position: relative; padding: 0 0 44px; }
+  .tl-item:last-child { padding-bottom: 0; }
+  .tl-item:before {
+    content: "";
+    position: absolute;
+    left: -36px; top: 7px;
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 1px solid var(--black);
+  }
+  .tl-item .step-no { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); font-weight: 500; }
+  .tl-item h4 { font-size: 25px; margin: 6px 0 10px; }
+  .tl-item p { font-size: 15px; color: rgba(10,10,9,0.72); max-width: 64ch; }
+  .tl-detail { font-size: 13.5px; color: var(--muted); margin-top: 12px; max-width: 64ch; border-left: 1px solid var(--line); padding-left: 16px; }
+  .tl-meta { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-top: 12px; font-weight: 500; }
+
+  .tl-item.payment:before { background: var(--gold); border-color: var(--gold); width: 13px; height: 13px; left: -38px; top: 5px; }
+  .tl-item.payment {
+    background: var(--cream);
+    border-left: 2px solid var(--gold);
+    margin-left: -16px;
+    padding: 22px 26px 26px;
+    margin-bottom: 44px;
+  }
+  section.alt .tl-item.payment { background: var(--white); }
+  .tl-item.payment h4 { color: var(--gold); }
+  .tl-item.payment .tag-pay { display: inline-block; background: var(--gold); color: var(--white); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500; padding: 5px 12px; margin-top: 8px; }
+
+  /* ---------- VISUAL DELIVERY TIMELINE ---------- */
+  .vtl { display: flex; overflow-x: auto; gap: 0; border: 1px solid var(--line); margin-top: 8px; }
+  .vtl-node { flex: 1 0 130px; padding: 22px 20px; border-right: 1px solid var(--line-faint); }
+  .vtl-node:last-child { border-right: none; }
+  .vtl-node .vd { font-family: var(--display); font-size: 20px; color: var(--gold); line-height: 1.1; }
+  .vtl-node .ve { font-size: 12.5px; color: var(--muted); margin-top: 8px; }
+  .vtl-node.shoot { background: var(--black); }
+  .vtl-node.shoot .vd { color: var(--white); }
+  .vtl-node.shoot .ve { color: rgba(255,255,255,0.6); }
+
+  /* ---------- FOOTER ---------- */
+  footer {
+    background: var(--black);
+    color: var(--white);
+    padding: 80px 0 60px;
+    border-bottom: none;
+  }
+  footer .logo { color: var(--white); font-size: 30px; }
+  footer .logo span { color: var(--gold); }
+  footer p { color: rgba(255,255,255,0.6); font-size: 14px; margin-top: 16px; letter-spacing: 0.04em; }
+  footer .fcontact { margin-top: 22px; font-size: 14px; }
+  footer .fcontact a { color: var(--white); border-bottom: 1px solid var(--gold); padding-bottom: 1px; }
+  footer .fcontact a:hover { color: var(--gold); }
+  footer .fcta { font-family: var(--display); font-style: italic; font-size: 26px; max-width: 24ch; margin-bottom: 40px; color: var(--white); }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 900px) {
+    .audience-grid { grid-template-columns: repeat(2, 1fr); }
+    .reels-grid { grid-template-columns: repeat(2, 1fr); }
+    .pkg-grid { grid-template-columns: 1fr; }
+    .pkg { border-right: none; border-bottom: 1px solid var(--line); }
+    .pkg.featured { margin: 0; }
+    .twocol { grid-template-columns: 1fr; gap: 36px; }
+    .reel-schedule { flex-direction: column; }
+    .reel-schedule > div { border-right: none; border-bottom: 1px solid var(--line-faint); }
+  }
+  @media (max-width: 680px) {
+    .wrap { padding: 0 20px; }
+    section { padding: 64px 0; }
+    .navlinks {
+      position: fixed;
+      top: var(--nav-h); left: 0; right: 0;
+      background: var(--white);
+      flex-direction: column;
+      gap: 0;
+      border-bottom: 1px solid var(--line);
+      padding: 8px 0;
+      display: none;
+    }
+    .navlinks.open { display: flex; }
+    .navlinks a { padding: 12px 32px; width: 100%; border-bottom: 1px solid var(--line-faint); }
+    .navtoggle { display: block; }
+    .detail-grid { grid-template-columns: 1fr; }
+    .detail-grid > div { border-right: none; }
+    .audience-grid, .shot-grid, .reels-grid { grid-template-columns: 1fr; }
+    .pay-grid { grid-template-columns: 1fr; }
+    .pay-grid > div { border-right: none; border-bottom: 1px solid rgba(139,105,20,0.3); }
+    .pkg-reels > div { grid-template-columns: 1fr; }
+    .pkg-reels .pr-name { border-right: none; border-bottom: 1px solid var(--line-faint); }
+    table.deliv td:last-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="topnav">
+  <div class="wrap">
+    <a href="#overview" class="logo">Lenz <span>Fotos</span></a>
+    <button class="navtoggle" id="navtoggle" aria-label="Toggle navigation">Menu</button>
+    <ul class="navlinks" id="navlinks">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#timeline">Deliverables & Timeline</a></li>
+      <li><a href="#shotlist">Shot List</a></li>
+      <li><a href="#process">Working With Me</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============ HERO / OVERVIEW ============ -->
+<section class="hero" id="overview">
+  <div class="wrap">
+    <p class="eyebrow">A Proposal for Bright Prospect · Summer Academy 2025</p>
+    <h1 class="hero-statement">Every student in this program has a story worth telling. This week, <em>we capture it</em> — for the donors who made it possible, the community that surrounds it, and the students who lived it.</h1>
+    <p class="hero-sub">Lenz Fotos will be on-site at Bright Prospect's Summer Academy on July 21, 22, and 24 to document the program through photography and video. The goal is a complete content package — student stories, program moments, and a recap video — built to serve Bright Prospect's donor stewardship, grant reporting, community outreach, and student recruitment needs.</p>
+    <div class="hero-meta">
+      <div><span class="k">Prepared for</span><span class="v">Debra — Chief Program Officer</span></div>
+      <div><span class="k">Shoot dates</span><span class="v">July 21 · 22 · 24, 2025</span></div>
+      <div><span class="k">Location</span><span class="v">Pomona, CA</span></div>
+      <div><span class="k">Recap delivery</span><span class="v">Friday, July 25</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EVENT DETAILS + AUDIENCES ============ -->
+<section id="details">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">The Engagement</p>
+      <h2>Why this matters</h2>
+      <p>Bright Prospect breaks intergenerational cycles of poverty by increasing college access for low-income, first-generation students — 94% matriculate to college, 91% graduate with a Bachelor's, and 1,952+ students have been served since 2002. This content captures that work, while it's happening.</p>
+    </div>
+
+    <div class="detail-grid">
+      <div><span class="k">Client</span><span class="v">Bright Prospect — brightprospect.org</span></div>
+      <div><span class="k">Contact</span><span class="v">Debra · Chief Program Officer</span></div>
+      <div><span class="k">Location</span><span class="v">Pomona, CA — Bright Prospect / PUSD campus</span></div>
+      <div><span class="k">Shoot dates</span><span class="v">Mon Jul 21 · Tue Jul 22 · Thu Jul 24</span></div>
+      <div><span class="k">Coverage per day</span><span class="v">2–3 hours</span></div>
+      <div><span class="k">Possible add-on</span><span class="v">Day trip — Wed Jul 23 (TBD with Debra)</span></div>
+      <div><span class="k">Final recap video</span><span class="v">Friday, July 25</span></div>
+      <div><span class="k">Social reels</span><span class="v">Rolling — every 3 days after Jul 24</span></div>
+    </div>
+
+    <div class="audience-grid">
+      <div class="audience-card">
+        <span class="num">01</span>
+        <h4>Donors & funders</h4>
+        <p>"See the impact of your contribution."</p>
+      </div>
+      <div class="audience-card">
+        <span class="num">02</span>
+        <h4>Grant reporting</h4>
+        <p>"Documented evidence of program outcomes."</p>
+      </div>
+      <div class="audience-card">
+        <span class="num">03</span>
+        <h4>Community & social</h4>
+        <p>"Share the story while it's happening."</p>
+      </div>
+      <div class="audience-card">
+        <span class="num">04</span>
+        <h4>Student recruitment</h4>
+        <p>"This could be your story."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PACKAGES ============ -->
+<section class="alt" id="packages">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Section 02</p>
+      <h2>Packages</h2>
+      <p>Three levels of coverage across the same three shoot days. The middle option — Full Story — is the recommended fit for Bright Prospect's blend of social, community, and donor needs.</p>
+    </div>
+
+    <div class="pkg-grid">
+      <!-- Storyteller -->
+      <div class="pkg">
+        <h3 class="pkg-name">Storyteller</h3>
+        <p class="pkg-frame">Video only · Donor stewardship content</p>
+        <div class="pkg-price">$2,025 <small>/ 3 days</small></div>
+        <ul class="pkg-includes">
+          <li>3 days videography (2.5 hrs avg / day)</li>
+          <li>Student story footage + b-roll each day</li>
+          <li>Color-graded 4K clips</li>
+          <li>Interview rig + mic setup</li>
+          <li>End-of-week recap video (3–5 min) — Jul 25</li>
+          <li>1 social reel (vertical 9:16)</li>
+          <li>Footage held & organized for future use</li>
+          <li class="excl">Photos not included</li>
+        </ul>
+        <div class="pkg-discount">10% multi-day discount applied — saves $225 vs. daily rate</div>
+      </div>
+
+      <!-- Full Story (featured) -->
+      <div class="pkg featured">
+        <span class="ribbon">★ Recommended</span>
+        <h3 class="pkg-name">Full Story</h3>
+        <p class="pkg-frame">Photo + Video · Community outreach + social media</p>
+        <div class="pkg-price">$2,790 <small>/ 3 days</small></div>
+        <ul class="pkg-includes">
+          <li>3 days photo + videography (2.5 hrs avg / day)</li>
+          <li>25–40 edited photos per day</li>
+          <li>Student story footage + b-roll each day</li>
+          <li>Interview rig + mic setup</li>
+          <li>End-of-week recap video (3–5 min) — Jul 25</li>
+          <li>3 social reels (9:16) — rolling drop every 3 days</li>
+          <li>Online gallery — private link, staff & student downloads</li>
+        </ul>
+        <div class="pkg-discount">10% multi-day discount applied — saves $310 vs. daily rate</div>
+      </div>
+
+      <!-- Full Production -->
+      <div class="pkg">
+        <h3 class="pkg-name">Full Production</h3>
+        <p class="pkg-frame">Premium · Annual report, donor presentation + campaign asset</p>
+        <div class="pkg-price">$3,735 <small>/ 3 days</small></div>
+        <ul class="pkg-includes">
+          <li>3 days photo + videography (2.5 hrs avg / day)</li>
+          <li>25–40 edited photos per day</li>
+          <li>Student story footage + b-roll each day</li>
+          <li>Interview rig + mic setup</li>
+          <li>Recap video — full brand treatment (5–8 min)</li>
+          <li>6 social reels (9:16) — rolling drop every 3 days</li>
+          <li>Same-day teaser on July 24</li>
+          <li>Online gallery + licensed music</li>
+          <li>Individual student/speaker interview clips as standalone files</li>
+        </ul>
+        <div class="pkg-discount">10% multi-day discount applied — saves $415 vs. daily rate</div>
+      </div>
+    </div>
+
+    <div class="twocol">
+      <!-- Day Trip add-on -->
+      <div class="panel">
+        <span class="tbd">Add-on · To be confirmed with Debra</span>
+        <h3>July 23 Day Trip</h3>
+        <div class="addon-price">+$560 <span>video only</span> &nbsp;·&nbsp; +$1,085 <span>photo + video</span></div>
+        <p>If the day trip is added, the package qualifies for the 4-day <strong>15% multi-day discount</strong>, applied retroactively to the base package.</p>
+        <p class="why">The field experience is the emotional core of a summer program. This footage connects most deeply with donors and future students.</p>
+      </div>
+
+      <!-- Upgrade path -->
+      <div class="panel">
+        <span class="tbd">Flexible commitment · Day by day</span>
+        <h3>Upgrade Path</h3>
+        <div class="upgrade-flow">
+          <div class="upgrade-step">
+            <span class="label">Start — Impact Day <span class="note">Video only, 1 day · easy yes, lowest commitment</span></span>
+            <span class="amt">$800</span>
+          </div>
+          <div class="upgrade-step">
+            <span class="label">Add 2nd day + photos</span>
+            <span class="amt">+$1,030</span>
+          </div>
+          <div class="upgrade-step">
+            <span class="label">Add 3rd day + recap</span>
+            <span class="amt">+$810</span>
+          </div>
+          <div class="upgrade-step">
+            <span class="label">Add July 23 trip</span>
+            <span class="amt">+$560</span>
+          </div>
+        </div>
+        <p class="upgrade-foot">Each step builds on the last. Footage from every day is held for the final recap video — regardless of which step Debra commits to.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DELIVERABLES & TIMELINE ============ -->
+<section id="timeline">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Section 03</p>
+      <h2>Deliverables & Timeline</h2>
+      <p>Every deliverable, its spec, and exactly when it lands — from the first shoot day through final gallery delivery in early August.</p>
+    </div>
+
+    <!-- Visual delivery timeline -->
+    <div class="vtl">
+      <div class="vtl-node shoot"><div class="vd">Jul 21</div><div class="ve">Shoot day 1 · preview within 48 hrs</div></div>
+      <div class="vtl-node shoot"><div class="vd">Jul 22</div><div class="ve">Shoot day 2 · mid-week teaser tonight</div></div>
+      <div class="vtl-node"><div class="vd">Jul 23</div><div class="ve">Day trip (TBD)</div></div>
+      <div class="vtl-node shoot"><div class="vd">Jul 24</div><div class="ve">Shoot day 3 · same-day teaser (Premium)</div></div>
+      <div class="vtl-node"><div class="vd">Jul 25</div><div class="ve">Recap video delivered</div></div>
+      <div class="vtl-node"><div class="vd">Jul 27 →</div><div class="ve">Rolling reels begin</div></div>
+      <div class="vtl-node"><div class="vd">Aug 7</div><div class="ve">Full photo gallery delivered</div></div>
+    </div>
+
+    <h3 style="font-size:26px;margin:64px 0 20px;">Payment Schedule</h3>
+    <div class="pay-grid">
+      <div>
+        <div class="pct">50%</div>
+        <h4>Due on signing</h4>
+        <p>Due the same week the agreement is signed — secures your shoot dates and confirms the engagement on both sides.</p>
+      </div>
+      <div>
+        <div class="pct">50%</div>
+        <h4>Due July 14</h4>
+        <p>One week before the first shoot day — fully paid before a single frame is captured. No awkward invoicing after delivery.</p>
+      </div>
+    </div>
+
+    <div class="deliv-block">
+      <h3>Photography Deliverables</h3>
+      <table class="deliv">
+        <thead><tr><th>Deliverable</th><th>Spec</th><th>Timeline</th></tr></thead>
+        <tbody>
+          <tr><td>Edited photo gallery</td><td>25–40 selects/day, color-corrected, full resolution</td><td>By Aug 7</td></tr>
+          <tr><td>Web-optimized set</td><td>Same selects at 2048px wide</td><td>With gallery</td></tr>
+          <tr><td>Social-ready crops</td><td>5–10 hero images at 1:1 and 4:5 for Instagram</td><td>With gallery</td></tr>
+          <tr><td>Online gallery access</td><td>Private link — Debra + staff + students can download</td><td>Within 48 hrs / shoot day</td></tr>
+          <tr><td>Mid-week preview teaser</td><td>5–10 selects from days 1 and 2</td><td>Evening of Jul 22</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="deliv-block">
+      <h3>Video Deliverables</h3>
+      <table class="deliv">
+        <thead><tr><th>Deliverable</th><th>Spec</th><th>Timeline</th></tr></thead>
+        <tbody>
+          <tr><td>End-of-week recap video</td><td>3–5 min (5–8 for Premium), narrative arc, licensed music, 1 revision round</td><td>Fri Jul 25</td></tr>
+          <tr><td>Social reels</td><td>Vertical 9:16, 30–60s each, exported for Reels + Facebook</td><td>Every 3 days after Jul 24</td></tr>
+          <tr><td>Interview clips</td><td>Individual student + speaker sound bites as standalone MP4 files</td><td>With first reel drop</td></tr>
+          <tr><td>Daily footage package</td><td>Color-graded 4K clips, organized + labeled</td><td>Within 5 days / shoot day</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="font-size:22px;margin:48px 0 8px;">Rolling Reel Drop Schedule <span style="font-size:13px;color:var(--muted);font-family:var(--body);font-weight:300;">(example for 3-reel package)</span></h3>
+    <div class="reel-schedule">
+      <div><div class="date">July 27</div><div class="what">Student voice reel</div></div>
+      <div><div class="date">July 30</div><div class="what">Academy highlights reel</div></div>
+      <div><div class="date">August 2</div><div class="what">Next year promo reel</div></div>
+    </div>
+    <p class="strat-note"><strong>Strategic note for Debra:</strong> <span>Rolling drops keep Bright Prospect's social feed active for 2–3 weeks after the academy ends — sustained visibility during exactly the time you may be sharing updates with donors or recruiting for next year.</span></p>
+
+    <div class="notincl">
+      <h3 style="font-size:20px;font-family:var(--display);">Not Included (Unless Added)</h3>
+      <ul>
+        <li><strong>Raw / unedited footage</strong> — add-on only; discuss before shoot day</li>
+        <li><strong>Same-day edited delivery</strong> — premium add-on</li>
+        <li><strong>Print fulfillment</strong> — files are print-ready; Bright Prospect orders prints through its own vendor</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SHOT LIST ============ -->
+<section class="alt" id="shotlist">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Section 04</p>
+      <h2>Shot List</h2>
+      <p>Organized by moment type — what we look for, and why it matters. Filter by medium or by the audience each shot serves.</p>
+    </div>
+
+    <div class="filters" id="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="photo">Photo only</button>
+      <button class="filter-btn" data-filter="video">Video only</button>
+      <button class="filter-btn" data-filter="donor">Donor priority</button>
+      <button class="filter-btn" data-filter="social">Social priority</button>
+    </div>
+
+    <div id="shotlist-container">
+      <!-- Guest Speakers -->
+      <div class="shot-group">
+        <h3>Guest Speakers</h3>
+        <div class="grp-sub">Voices that shape the room</div>
+        <div class="shot-grid">
+          <div class="shot-card" data-medium="both" data-tags="donor grant">
+            <span class="shot-medium">⬡ Photo + Video</span>
+            <h4>Speaker at podium — wide establishing shot</h4>
+            <p class="tip">Capture the room too — students listening, hands raised, engaged faces. Context matters more than a headshot.</p>
+            <div class="shot-tags"><span class="tag donor">Donor</span><span class="tag">Grant report</span></div>
+          </div>
+          <div class="shot-card" data-medium="video" data-tags="donor">
+            <span class="shot-medium">▶ Video</span>
+            <h4>Speaker close-up — clean talking head</h4>
+            <p class="tip">Ask the speaker to state their name and title to camera before Q&A. Used for pull quotes in the recap video.</p>
+            <div class="shot-tags"><span class="tag donor">Donor</span></div>
+          </div>
+          <div class="shot-card" data-medium="photo" data-tags="social recruitment">
+            <span class="shot-medium">◉ Photo</span>
+            <h4>Student reaction shots during the talk</h4>
+            <p class="tip">The moment a student leans forward, nods, or looks moved. Shoot from the side, never from behind.</p>
+            <div class="shot-tags"><span class="tag social">Social</span><span class="tag">Recruitment</span></div>
+          </div>
+          <div class="shot-card" data-medium="both" data-tags="donor social">
+            <span class="shot-medium">⬡ Photo + Video</span>
+            <h4>Speaker + student one-on-one after the session</h4>
+            <p class="tip">Candid moments after the talk — students asking questions, exchanging contacts. Don't interrupt; observe and shoot.</p>
+            <div class="shot-tags"><span class="tag donor">Donor</span><span class="tag social">Social</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Workshops -->
+      <div class="shot-group">
+        <h3>Workshops</h3>
+        <div class="grp-sub">The work, up close</div>
+        <div class="shot-grid">
+          <div class="shot-card" data-medium="photo" data-tags="social grant">
+            <span class="shot-medium">◉ Photo</span>
+            <h4>Students working — hands on materials or screens</h4>
+            <p class="tip">Tight shots of hands writing, typing, building. Look for focused, active engagement over posed attention.</p>
+            <div class="shot-tags"><span class="tag social">Social</span><span class="tag">Grant report</span></div>
+          </div>
+          <div class="shot-card" data-medium="both" data-tags="donor social">
+            <span class="shot-medium">⬡ Photo + Video</span>
+            <h4>The "aha moment" — student gets something</h4>
+            <p class="tip">A smile, a raised hand, leaning in to show a peer. Your best workshop shots live here.</p>
+            <div class="shot-tags"><span class="tag donor">Donor</span><span class="tag social">Social</span></div>
+          </div>
+          <div class="shot-card" data-medium="video" data-tags="grant">
+            <span class="shot-medium">▶ Video</span>
+            <h4>Facilitator walking the room — wide tracking shot</h4>
+            <p class="tip">A slow pan across an active room tells the story of scale — how many students, how engaged, how led.</p>
+            <div class="shot-tags"><span class="tag">Grant report</span></div>
+          </div>
+          <div class="shot-card" data-medium="photo" data-tags="social recruitment">
+            <span class="shot-medium">◉ Photo</span>
+            <h4>Whiteboard or wall covered in student work</h4>
+            <p class="tip">Post-it notes, group brainstorms, vision boards. Clean flat-on shot. Great for carousels.</p>
+            <div class="shot-tags"><span class="tag social">Social</span><span class="tag">Recruitment</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Building -->
+      <div class="shot-group">
+        <h3>Team Building</h3>
+        <div class="grp-sub">Energy, connection, and the win</div>
+        <div class="shot-grid">
+          <div class="shot-card" data-medium="both" data-tags="social recruitment">
+            <span class="shot-medium">⬡ Photo + Video</span>
+            <h4>Group mid-activity — energy in motion</h4>
+            <p class="tip">Don't wait for the posed group shot. Best images are taken mid-challenge — chaos, laughter, problem-solving.</p>
+            <div class="shot-tags"><span class="tag social">Social</span><span class="tag">Recruitment</span></div>
+          </div>
+          <div class="shot-card" data-medium="photo" data-tags="donor social">
+            <span class="shot-medium">◉ Photo</span>
+            <h4>The celebratory moment — win, breakthrough, finish</h4>
+            <p class="tip">Hands in the air, group hugs, cheering. Time your burst for the peak of the reaction.</p>
+            <div class="shot-tags"><span class="tag donor">Donor</span><span class="tag social">Social</span></div>
+          </div>
+          <div class="shot-card" data-medium="video" data-tags="social recruitment">
+            <span class="shot-medium">▶ Video</span>
+            <h4>Two students connecting — natural conversation</h4>
+            <p class="tip">Side-angle shot of two students laughing or helping each other. Observe, don't interrupt.</p>
+            <div class="shot-tags"><span class="tag social">Social</span><span class="tag">Recruitment</span></div>
+          </div>
+          <div class="shot-card" data-medium="photo" data-tags="donor grant">
+            <span class="shot-medium">◉ Photo</span>
+            <h4>Clean group photo — all participants</h4>
+            <p class="tip">Get this early while energy is high. Elevated angle if possible. Natural light preferred.</p>
+            <div class="shot-tags"><span class="tag donor">Donor</span><span class="tag">Grant report</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meals & Breaks -->
+      <div class="shot-group">
+        <h3>Meals & Breaks</h3>
+        <div class="grp-sub">Where the real conversations happen</div>
+        <div class="shot-grid">
+          <div class="shot-card" data-medium="photo" data-tags="social">
+            <span class="shot-medium">◉ Photo</span>
+            <h4>Candid lunch table conversation</h4>
+            <p class="tip">Shoot from a distance with a longer focal length so students forget you're there.</p>
+            <div class="shot-tags"><span class="tag social">Social</span></div>
+          </div>
+          <div class="shot-card" data-medium="both" data-tags="social donor">
+            <span class="shot-medium">⬡ Photo + Video</span>
+            <h4>Student + staff sharing a moment</h4>
+            <p class="tip">Debra sitting with students, a counselor checking in — shows relational depth. High value for donor decks.</p>
+            <div class="shot-tags"><span class="tag social">Social</span><span class="tag donor">Donor</span></div>
+          </div>
+          <div class="shot-card" data-medium="video" data-tags="donor">
+            <span class="shot-medium">▶ Video</span>
+            <h4>Informal interview — pull aside at lunch</h4>
+            <p class="tip">Relaxed settings = relaxed answers. Ask one question, let them talk.</p>
+            <div class="shot-tags"><span class="tag donor">Donor</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day Trip -->
+      <div class="shot-group">
+        <h3>Day Trip — July 23 <span style="font-size:13px;color:var(--muted);font-family:var(--body);font-weight:300;">(if confirmed)</span></h3>
+        <div class="grp-sub">The emotional core of the week</div>
+        <div class="shot-grid">
+          <div class="shot-card" data-medium="both" data-tags="donor social">
+            <span class="shot-medium">⬡ Photo + Video</span>
+            <h4>First reaction arriving at the location</h4>
+            <p class="tip">Be ready before bus doors open. The first look is unrepeatable. Wide group shot, then fast to individual faces.</p>
+            <div class="shot-tags"><span class="tag donor">Donor</span><span class="tag social">Social</span></div>
+          </div>
+          <div class="shot-card" data-medium="video" data-tags="donor social recruitment">
+            <span class="shot-medium">▶ Video</span>
+            <h4>Quiet individual moment — student alone taking it in</h4>
+            <p class="tip">Ask softly: "What's going through your mind right now?" Let silence breathe.</p>
+            <div class="shot-tags"><span class="tag donor">Donor</span><span class="tag social">Social</span><span class="tag">Recruitment</span></div>
+          </div>
+          <div class="shot-card" data-medium="both" data-tags="social recruitment">
+            <span class="shot-medium">⬡ Photo + Video</span>
+            <h4>The group in an environment they've never been in</h4>
+            <p class="tip">Wide environmental shot showing students belonging somewhere new. That's Bright Prospect's entire story in one frame.</p>
+            <div class="shot-tags"><span class="tag social">Social</span><span class="tag">Recruitment</span></div>
+          </div>
+          <div class="shot-card" data-medium="video" data-tags="donor">
+            <span class="shot-medium">▶ Video</span>
+            <h4>On-the-spot interview — "what do you want to remember?"</h4>
+            <p class="tip">Ask toward the end of the trip, not the beginning. The answer means more after they've lived the experience.</p>
+            <div class="shot-tags"><span class="tag donor">Donor</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="empty-state" id="empty-state">No shots match that filter.</div>
+  </div>
+</section>
+
+<!-- ============ REELS MENU ============ -->
+<section id="reels">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Social Reels Menu</p>
+      <h2>The reel library</h2>
+      <p>Available as part of a package or as individual add-ons. Each reel is built vertical (9:16) and exported for the platforms Bright Prospect already uses.</p>
+    </div>
+
+    <div class="reel-pricing">
+      <div><span class="p">$50</span> per reel</div>
+      <div><span class="p">$125</span> for 3 reels</div>
+      <div><span class="p">$225</span> for 6 reels</div>
+    </div>
+
+    <div class="reels-grid">
+      <div class="reel-card">
+        <h4>Student voice</h4>
+        <div class="fmt">Interview-style · 1 student · 30–60s</div>
+        <div class="for">Most powerful for donor asks</div>
+        <div class="aud"><span class="tag donor">Donors</span></div>
+      </div>
+      <div class="reel-card">
+        <h4>General recap</h4>
+        <div class="fmt">Energy cut of the week · fast-paced</div>
+        <div class="for">Instagram, Facebook, community sharing</div>
+        <div class="aud"><span class="tag social">Social</span></div>
+      </div>
+      <div class="reel-card">
+        <h4>Next year promo</h4>
+        <div class="fmt">"This could be your story"</div>
+        <div class="for">Current students speak to future applicants</div>
+        <div class="aud"><span class="tag">Recruitment</span></div>
+      </div>
+      <div class="reel-card">
+        <h4>Donor thank you</h4>
+        <div class="fmt">Students speak directly to camera</div>
+        <div class="for">Closes the emotional loop before a fundraising ask</div>
+        <div class="aud"><span class="tag donor">Donors</span></div>
+      </div>
+      <div class="reel-card">
+        <h4>Day in the life</h4>
+        <div class="fmt">Organic, unscripted follow-along</div>
+        <div class="for">High engagement, feels authentic</div>
+        <div class="aud"><span class="tag social">Social</span></div>
+      </div>
+      <div class="reel-card">
+        <h4>Staff spotlight</h4>
+        <div class="fmt">Feature on Debra or a counselor</div>
+        <div class="for">Organizational credibility</div>
+        <div class="aud"><span class="tag social">Social</span><span class="tag donor">Donors</span></div>
+      </div>
+      <div class="reel-card">
+        <h4>Impact by the numbers</h4>
+        <div class="fmt">Motion stat reel · "91% graduate"</div>
+        <div class="for">LinkedIn + annual reports</div>
+        <div class="aud"><span class="tag donor">Donors</span></div>
+      </div>
+      <div class="reel-card">
+        <h4>Student transformation</h4>
+        <div class="fmt">One student's arc told across the week</div>
+        <div class="for">Most emotionally resonant format</div>
+        <div class="aud"><span class="tag donor">Donors</span><span class="tag social">Social</span></div>
+      </div>
+    </div>
+
+    <div class="pkg-reels">
+      <div>
+        <div class="pr-name">Storyteller<small>Video only — 1 reel</small></div>
+        <div class="pr-list">Day one recap</div>
+      </div>
+      <div>
+        <div class="pr-name">Full Story<small>Photo + Video — 3 reels</small></div>
+        <div class="pr-list">Student voice · Academy highlights · Next year promo</div>
+      </div>
+      <div>
+        <div class="pr-name">Full Production<small>Premium — 6 reels</small></div>
+        <div class="pr-list">All three above · Donor thank you · Day in the life · Impact by the numbers</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="alt" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Section 05</p>
+      <h2>Working With Me</h2>
+      <p>How a Lenz Fotos engagement runs, start to finish — eight steps from first conversation to final debrief. Payment milestones are marked in gold.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <span class="step-no">Step 01</span>
+        <h4>Discovery conversation</h4>
+        <p>We sit down — in person or virtually — and I listen. You tell me who the students are, what the week looks like, and who needs to see this content. No pitch, no package pressure.</p>
+        <p class="tl-detail">What I need from you: the week's schedule, names of any guest speakers, and what a successful deliverable looks like to Debra specifically.</p>
+        <div class="tl-meta">30–45 min · Before booking</div>
+      </div>
+
+      <div class="tl-item">
+        <span class="step-no">Step 02</span>
+        <h4>Proposal + agreement</h4>
+        <p>I send a written proposal within 48 hours — scope, deliverables, timeline, and price all itemized. We agree on everything in writing before a single photo is taken.</p>
+        <p class="tl-detail">You'll receive: itemized deliverable list, shoot dates confirmed, payment schedule, and cancellation policy.</p>
+        <div class="tl-meta">Within 48 hrs · Written agreement</div>
+      </div>
+
+      <div class="tl-item payment">
+        <span class="step-no">Payment milestone</span>
+        <h4>First payment — 50%</h4>
+        <p>Due the same week we agree to move forward. This secures your shoot dates and confirms the engagement on both sides. Invoice sent immediately after the agreement is signed.</p>
+        <span class="tag-pay">50% due on signing · Secures your dates</span>
+      </div>
+
+      <div class="tl-item">
+        <span class="step-no">Step 03</span>
+        <h4>Pre-shoot prep call</h4>
+        <p>One week before July 21 — a 20-minute call. I walk through the shot list, confirm the schedule, and identify which students or speakers to prioritize.</p>
+        <p class="tl-detail">You'll share: daily schedule, consent status for minors on camera, priority students or speakers, and a staff point of contact for each day.</p>
+        <div class="tl-meta">Week of July 14 · 20 min</div>
+      </div>
+
+      <div class="tl-item payment">
+        <span class="step-no">Payment milestone</span>
+        <h4>Final payment — 50%</h4>
+        <p>Due by July 14 — one week before the first shoot day. You are fully paid before I arrive on July 21. No awkward invoicing after delivery. Same week as the prep call — one clean deadline for both.</p>
+        <span class="tag-pay">50% due July 14 · Fully paid before shoot</span>
+      </div>
+
+      <div class="tl-item">
+        <span class="step-no">Step 04</span>
+        <h4>Shoot days — July 21, 22 & 24</h4>
+        <p>I arrive 15 minutes early, introduce myself naturally, and blend in. I work independently — you don't need to manage me. A quick heads-up from staff before anything important is always welcome. End-of-day check-in to confirm priorities for the next day.</p>
+      </div>
+
+      <div class="tl-item">
+        <span class="step-no">Step 05</span>
+        <h4>Mid-week preview teaser</h4>
+        <p>Evening of July 22 — I send 5–10 unedited selects so Bright Prospect can share something on social while the week is still happening. This is a courtesy preview, not the final edit.</p>
+        <div class="tl-meta">Evening Jul 22 · Optional</div>
+      </div>
+
+      <div class="tl-item">
+        <span class="step-no">Step 06</span>
+        <h4>Editing + post-production</h4>
+        <p>After the week wraps I edit everything. Photos curated and color-corrected across all three days. The recap video is built as a narrative — a story with arc, not just a highlight reel.</p>
+        <p class="tl-detail">Photos within 2 weeks of July 24 (by Aug 7) · Recap video Friday July 25 · Social reels + interview clips rolling, every 3 days after July 24.</p>
+      </div>
+
+      <div class="tl-item">
+        <span class="step-no">Step 07</span>
+        <h4>Delivery + one revision round</h4>
+        <p>Everything delivered through a shared gallery and private video links. One revision round on the recap video included. Photos are final on delivery.</p>
+        <p class="tl-detail">What Bright Prospect receives: gallery link, full-res + web-optimized video files, standalone interview clips, social reels exported at correct specs for each platform.</p>
+        <div class="tl-meta">1 revision (video only) · All formats included</div>
+      </div>
+
+      <div class="tl-item">
+        <span class="step-no">Step 08</span>
+        <h4>Wrap + archive</h4>
+        <p>Licensed music rights transfer for Bright Prospect's nonprofit use on delivery. Files archived for 90 days. A real debrief call — what worked, what I'd do differently, and what's coming up next for Bright Prospect.</p>
+        <div class="tl-meta">90-day archive · Music rights included</div>
+      </div>
+    </div>
+
+    <!-- Interview Questions accordion -->
+    <div style="margin-top:80px;">
+      <div class="sec-head" style="margin-bottom:28px;">
+        <p class="eyebrow">Reference</p>
+        <h2 style="font-size:clamp(28px,4vw,40px);">Interview Questions</h2>
+        <p>The prompts I bring to camera — written to draw out the story, not the soundbite.</p>
+      </div>
+      <div class="accordion" id="accordion">
+        <div class="acc-item">
+          <button class="acc-trigger">For students <span class="plus">+</span></button>
+          <div class="acc-body"><ul>
+            <li>Where were you a year ago, and where do you see yourself now?</li>
+            <li>What did you think college was like before Bright Prospect, and what do you think now?</li>
+            <li>Who in your life believed in you before you believed in yourself?</li>
+            <li>What does graduating from college mean for your family?</li>
+            <li>If you could send a message to your future self on graduation day, what would you say?</li>
+            <li>Is there someone out there who made this possible for you — what would you want to say to them?</li>
+            <li>What does it mean to know that people who don't even know you believed in you enough to invest in this?</li>
+          </ul></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trigger">For the day trip <span class="plus">+</span></button>
+          <div class="acc-body"><ul>
+            <li>What's going through your mind right now, being here?</li>
+            <li>What do you want to remember about today?</li>
+            <li>Is this somewhere you ever imagined yourself as a kid?</li>
+          </ul></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trigger">For guest speakers <span class="plus">+</span></button>
+          <div class="acc-body"><ul>
+            <li>What do you wish someone had told you at their age?</li>
+            <li>Was there a moment where you almost didn't make it — and what changed?</li>
+            <li>What do you see in this generation that gives you hope?</li>
+            <li>If one student in this room remembers one thing you said five years from now, what do you want it to be?</li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <p class="fcta">Let's tell this year's story together, Debra.</p>
+    <div class="logo">Lenz <span>Fotos</span></div>
+    <p>Pomona · Inland Empire · Southern California</p>
+    <div class="fcontact">
+      <a href="mailto:contact@lenzfotos.com">contact@lenzfotos.com</a> &nbsp;·&nbsp;
+      <a href="https://lenzfotos.com" target="_blank" rel="noopener">lenzfotos.com</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // --- Mobile nav toggle ---
+  const navToggle = document.getElementById('navtoggle');
+  const navLinks = document.getElementById('navlinks');
+  navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  // --- Active section highlight (scroll spy) ---
+  const sections = ['overview','packages','timeline','shotlist','process']
+    .map(id => document.getElementById(id)).filter(Boolean);
+  const linkMap = {};
+  navLinks.querySelectorAll('a').forEach(a => { linkMap[a.getAttribute('href').slice(1)] = a; });
+  const spy = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.querySelectorAll('a').forEach(a => a.classList.remove('active'));
+        const link = linkMap[e.target.id];
+        if (link) link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+  sections.forEach(s => spy.observe(s));
+
+  // --- Shot list filtering ---
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.shot-card');
+  const groups = document.querySelectorAll('.shot-group');
+  const emptyState = document.getElementById('empty-state');
+
+  function applyFilter(filter) {
+    cards.forEach(card => {
+      const medium = card.dataset.medium;   // photo | video | both
+      const tags = card.dataset.tags;        // space-separated
+      let show = false;
+      if (filter === 'all') show = true;
+      else if (filter === 'photo') show = (medium === 'photo' || medium === 'both');
+      else if (filter === 'video') show = (medium === 'video' || medium === 'both');
+      else if (filter === 'donor') show = tags.includes('donor');
+      else if (filter === 'social') show = tags.includes('social');
+      card.classList.toggle('hidden', !show);
+    });
+    // Hide groups with no visible cards
+    let anyVisible = false;
+    groups.forEach(g => {
+      const visible = g.querySelectorAll('.shot-card:not(.hidden)').length;
+      g.style.display = visible ? '' : 'none';
+      if (visible) anyVisible = true;
+    });
+    emptyState.style.display = anyVisible ? 'none' : 'block';
+  }
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      applyFilter(btn.dataset.filter);
+    });
+  });
+
+  // --- Interview questions accordion ---
+  document.querySelectorAll('.acc-trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const item = trigger.parentElement;
+      item.classList.toggle('open');
+    });
+  });
+</script>
+</body>
+</html>
