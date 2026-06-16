@@ -117,13 +117,26 @@
     border-bottom: none;
   }
   .hero .eyebrow { color: var(--gold); }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(40px, 6vw, 72px);
+    align-items: center;
+  }
+  .hero-media img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+  }
   .hero-statement {
     font-family: var(--display);
     font-weight: 400;
     font-style: italic;
-    font-size: clamp(28px, 4.4vw, 50px);
+    font-size: clamp(30px, 4vw, 52px);
     line-height: 1.22;
-    max-width: 18ch;
     margin: 26px 0 0;
   }
   .hero-statement em { font-style: normal; color: var(--gold); }
@@ -501,6 +514,8 @@
 
   /* ---------- RESPONSIVE ---------- */
   @media (max-width: 900px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 44px; }
+    .hero-media { max-width: 520px; }
     .audience-grid { grid-template-columns: repeat(2, 1fr); }
     .reels-grid { grid-template-columns: repeat(2, 1fr); }
     .pkg-grid { grid-template-columns: 1fr; }
@@ -556,15 +571,20 @@
 
 <!-- ============ HERO / OVERVIEW ============ -->
 <section class="hero" id="overview">
-  <div class="wrap">
-    <p class="eyebrow">A Proposal for Bright Prospect · Summer Academy 2026</p>
-    <h1 class="hero-statement">Every student in this program has a story worth telling. This week, <em>we capture it</em> — for the donors who made it possible, the community that surrounds it, and the students who lived it.</h1>
-    <p class="hero-sub">Lenz Fotos will be on-site at Bright Prospect's Summer Academy on July 20, 21, and 23 to document the program through photography and video. The goal is a complete content package — student stories, program moments, and a recap video — built to serve Bright Prospect's donor stewardship, grant reporting, community outreach, and student recruitment needs.</p>
-    <div class="hero-meta">
-      <div><span class="k">Prepared for</span><span class="v">Debra — Chief Program Officer</span></div>
-      <div><span class="k">Shoot dates</span><span class="v">July 20 · 21 · 23, 2026</span></div>
-      <div><span class="k">Location</span><span class="v">Claremont, CA</span></div>
-      <div><span class="k">Recap delivery</span><span class="v">Friday, July 24</span></div>
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">A Proposal for Bright Prospect · Summer Academy 2026</p>
+      <h1 class="hero-statement">Every student here has a story worth telling — <em>this week, we capture it.</em></h1>
+      <p class="hero-sub">Lenz Fotos will be on-site at Bright Prospect's Summer Academy on July 20, 21, and 23 to document the program through photography and video. The goal is a complete content package — student stories, program moments, and a recap video — built to serve Bright Prospect's donor stewardship, grant reporting, community outreach, and student recruitment needs.</p>
+      <div class="hero-meta">
+        <div><span class="k">Prepared for</span><span class="v">Bright Prospect</span></div>
+        <div><span class="k">Shoot dates</span><span class="v">July 20 · 21 · 23, 2026</span></div>
+        <div><span class="k">Location</span><span class="v">Claremont, CA</span></div>
+        <div><span class="k">Recap delivery</span><span class="v">Friday, July 24</span></div>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="assets/summer-academy.jpg" alt="Bright Prospect students gathered on the steps beneath a Summer Academy sign" />
     </div>
   </div>
 </section>
@@ -683,7 +703,7 @@
     <div class="twocol">
       <!-- Day Trip add-on -->
       <div class="panel">
-        <span class="tbd">Add-on · To be confirmed with Debra</span>
+        <span class="tbd">Add-on · To be confirmed with staff</span>
         <h3>July 22 Day Trip</h3>
         <div class="addon-price">+$560 <span>video only</span> &nbsp;·&nbsp; +$1,085 <span>photo + video</span></div>
         <p>If the day trip is added, the package qualifies for the 4-day <strong>15% multi-day discount</strong>, applied retroactively to the base package.</p>
@@ -712,7 +732,7 @@
             <span class="amt">+$560</span>
           </div>
         </div>
-        <p class="upgrade-foot">Each step builds on the last. Footage from every day is held for the final recap video — regardless of which step Debra commits to.</p>
+        <p class="upgrade-foot">Each step builds on the last. Footage from every day is held for the final recap video — regardless of which step you commit to.</p>
       </div>
     </div>
   </div>
@@ -760,7 +780,7 @@
           <tr><td>Edited photo gallery</td><td>25–40 selects/day, color-corrected, full resolution</td><td>By Aug 6</td></tr>
           <tr><td>Web-optimized set</td><td>Same selects at 2048px wide</td><td>With gallery</td></tr>
           <tr><td>Social-ready crops</td><td>5–10 hero images at 1:1 and 4:5 for Instagram</td><td>With gallery</td></tr>
-          <tr><td>Online gallery access</td><td>Private link — Debra + staff + students can download</td><td>Within 48 hrs / shoot day</td></tr>
+          <tr><td>Online gallery access</td><td>Private link — staff + students can download</td><td>Within 48 hrs / shoot day</td></tr>
           <tr><td>Mid-week preview teaser</td><td>5–10 selects from days 1 and 2</td><td>Evening of Jul 21</td></tr>
         </tbody>
       </table>
@@ -785,7 +805,7 @@
       <div><div class="date">July 29</div><div class="what">Academy highlights reel</div></div>
       <div><div class="date">August 1</div><div class="what">Next year promo reel</div></div>
     </div>
-    <p class="strat-note"><strong>Strategic note for Debra:</strong> <span>Rolling drops keep Bright Prospect's social feed active for 2–3 weeks after the academy ends — sustained visibility during exactly the time you may be sharing updates with donors or recruiting for next year.</span></p>
+    <p class="strat-note"><strong>Strategic note:</strong> <span>Rolling drops keep Bright Prospect's social feed active for 2–3 weeks after the academy ends — sustained visibility during exactly the time you may be sharing updates with donors or recruiting for next year.</span></p>
 
     <div class="notincl">
       <h3 style="font-size:20px;font-family:var(--display);">Not Included (Unless Added)</h3>
@@ -926,7 +946,7 @@
           <div class="shot-card" data-medium="both" data-tags="social donor">
             <span class="shot-medium">⬡ Photo + Video</span>
             <h4>Student + staff sharing a moment</h4>
-            <p class="tip">Debra sitting with students, a counselor checking in — shows relational depth. High value for donor decks.</p>
+            <p class="tip">A staff lead sitting with students, a counselor checking in — shows relational depth. High value for donor decks.</p>
             <div class="shot-tags"><span class="tag social">Social</span><span class="tag donor">Donor</span></div>
           </div>
           <div class="shot-card" data-medium="video" data-tags="donor">
@@ -1023,7 +1043,7 @@
       </div>
       <div class="reel-card">
         <h4>Staff spotlight</h4>
-        <div class="fmt">Feature on Debra or a counselor</div>
+        <div class="fmt">Feature on a staff lead or counselor</div>
         <div class="for">Organizational credibility</div>
         <div class="aud"><span class="tag social">Social</span><span class="tag donor">Donors</span></div>
       </div>
@@ -1072,7 +1092,7 @@
         <span class="step-no">Step 01</span>
         <h4>Discovery conversation</h4>
         <p>We sit down — in person or virtually — and I listen. You tell me who the students are, what the week looks like, and who needs to see this content. No pitch, no package pressure.</p>
-        <p class="tl-detail">What I need from you: the week's schedule, names of any guest speakers, and what a successful deliverable looks like to Debra specifically.</p>
+        <p class="tl-detail">What I need from you: the week's schedule, names of any guest speakers, and what a successful deliverable looks like to your team specifically.</p>
         <div class="tl-meta">30–45 min · Before booking</div>
       </div>
 
@@ -1187,7 +1207,7 @@
 <!-- ============ FOOTER ============ -->
 <footer>
   <div class="wrap">
-    <p class="fcta">Let's tell this year's story together, Debra.</p>
+    <p class="fcta">Let's tell this year's story together.</p>
     <div class="logo">Lenz <span>Fotos</span></div>
     <p>Pomona · Inland Empire · Southern California</p>
     <div class="fcontact">
