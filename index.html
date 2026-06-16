@@ -18,6 +18,10 @@
     --accent-soft: #f3de73;                         /* BP golden yellow — accents on DARK sections */
     /* ========================================= */
 
+    /* Brand constant — NOT part of the theme. The Lenz Fotos wordmark in the
+       top nav ALWAYS stays this dark black, whatever the client theme is. */
+    --logo-ink: #0a0a09;
+
     --line: rgba(var(--black-rgb), 0.12);
     --line-faint: rgba(var(--black-rgb), 0.07);
     --muted: rgba(var(--black-rgb), 0.55);
@@ -80,6 +84,7 @@
     letter-spacing: 0.02em;
   }
   .logo span { color: var(--gold); }
+  .topnav .logo, .topnav .logo span { color: var(--logo-ink); }  /* Lenz wordmark — always black, never themed */
   .navlinks { display: flex; gap: 30px; list-style: none; align-items: center; }
   .navlinks a {
     font-size: 12px;
